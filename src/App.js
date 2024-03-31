@@ -1,27 +1,26 @@
-import React from 'react';
-import { FaYoutube } from 'react-icons/fa';
+import React, { useState } from 'react'
+import Navbar from './components/navbar/Navbar'
+import {
+  Route,
+  BrowserRouter as Router,
+  Switch
+} from "react-router-dom";
+import Menu from './components/menu/Menu';
 
 const App = () => {
-    return (
-        <div>
-            <header>
-                <h1>A template for React Project</h1>
-            </header>
-            <main>
-                <h1>Welcome to React</h1>
-            </main>
-            <footer>
-                <p className="left">
-                    Subscribe to my{' '}
-                    <a href="https://www.youtube.com/c/anisulislamrubel">
-                        <FaYoutube className="footer__icon" />
-                    </a>{' '}
-                    channel
-                </p>
-                <p className="right">Developed with &hearts; by Anisul Islam</p>
-            </footer>
-        </div>
-    );
-};
+  const [menuOpen,setMenuOpen]=useState (false)
+  return (
+    <>
+     <Router>
+        <Switch>
+          <Route exact path="/">
+            <Navbar  menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+            <Menu  menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+          </Route>          
+        </Switch>
+    </Router>
+    </>
+  )
+}
 
-export default App;
+export default App
