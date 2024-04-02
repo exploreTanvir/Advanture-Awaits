@@ -1,25 +1,18 @@
-import React, { useState } from 'react'
-import Navbar from './components/navbar/Navbar'
-import {
-  Route,
-  BrowserRouter as Router,
-  Switch
-} from "react-router-dom";
-import Menu from './components/menu/Menu';
+import React, { useState } from 'react';
+import Menu from './components/Menu/Menu';
+import TopBar from './components/Topbar/Topbar';
+import Hero from './components/hero/Hero';
 
 const App = () => {
-  const [menuOpen,setMenuOpen]=useState (false)
+  const [menuOpen,setMenuOpen]=useState(false)
   return (
-    <>
-     <Router>
-        <Switch>
-          <Route exact path="/">
-            <Navbar  menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-            <Menu  menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-          </Route>          
-        </Switch>
-    </Router>
-    </>
+    <div className='app'>
+      <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <div className='section'>
+          <Hero/>
+        </div>
+    </div>
   )
 }
 
