@@ -9,6 +9,10 @@
   flex-direction: column;
   .text {
     line-height: 40px;
+
+    h1 {
+      font-size: 2rem;
+    }
   }
 
   .items {
@@ -26,7 +30,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #f8aa0d;
+    border: 1px solid #f17c0e;
     padding: 30px 0;
     border-radius: 5px;
     .icon {
@@ -35,7 +39,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #f8aa0d;
+      background: #f17c0e;
       border-radius: 50%;
 
       i {
@@ -57,7 +61,7 @@
       margin-top: 10px;
       padding: 8px 20px;
       border-radius: 20px;
-      border: 2px solid #f8aa0d;
+      border: 2px solid #f17c0e;
     }
   }
 }
