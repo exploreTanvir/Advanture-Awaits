@@ -1,0 +1,33 @@
+.company {
+  height: 30vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .left {
+    align-self: self-start;
+    width: 50vw;
+
+    h1 {
+      font-size: 4rem;
+      color: white;
+    }
+  }
+
+  .right {
+    width: 30vw;
+    align-self: center;
+    margin-top: 60px;
+
+    p {
+      color: white;
+      font-size: 30px;
+
+      span {
+        font-size: inherit;
+        color: #f17c0e;
+      }
+    }
+  }
+}
