@@ -1,0 +1,33 @@
+.Insurance {
+  height: 80vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  .left {
+    flex-direction: column;
+    width: 35vw;
+    color: white;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+    u,
+    p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .first {
+      background: #f17c0e;
+      padding: 20px 10px;
+    }
+  }
+
+  .right {
+    background-image: url(../../assets/pexels-photo-1231643.jpeg);
+    width: 30vw;
+    height: 30vw;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 30px;
+  }
+}
