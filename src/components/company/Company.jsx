@@ -5,7 +5,7 @@ const Company = () => {
   return (
     <div className='company'>
         <div className="left">
-            <h1>The Best <i>Insurance</i> Companies for 2021 </h1>
+            <h1>The Best <i>Insurance</i> Companies for 2023 </h1>
 
         </div>
         <div className="right">
