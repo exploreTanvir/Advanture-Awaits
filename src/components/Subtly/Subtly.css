@@ -1,0 +1,23 @@
+.Subtly {
+  height: 50vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    width: 70%;
+
+    .left {
+      justify-content: start;
+      img {
+        width: 83%;
+      }
+    }
+
+    .right {
+      color: white;
+      font-size: 18px;
+    }
+  }
+}
