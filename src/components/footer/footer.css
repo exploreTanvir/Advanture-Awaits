@@ -1,0 +1,21 @@
+.Footer {
+  height: 20vh;
+  background: rgb(60, 60, 60);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  p:first-child {
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  p {
+    color: white;
+  }
+  span {
+    color: yellow;
+    text-decoration: underline;
+  }
+}
